@@ -1,0 +1,260 @@
+/* General */
+
+html, body {
+  height: 100%;
+}
+
+html, input, select {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ccc;
+}
+
+body {
+  margin: 0;
+  background-color: #555;
+}
+
+#container {
+  max-width: 640px;
+  margin: 0 auto -40px;
+  background-color: #222;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  box-shadow: 0 0 5px #333;
+}
+
+#container > div {
+  padding-bottom: 40px;
+}
+
+#footer {
+  color: #555;
+  font-size: 0.75em;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  height: 100%;
+}
+
+h1, h2, h3 {
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 2em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0;
+  height: 32px;
+  line-height: 32px;
+  padding-top: 16px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 0;
+  height: 48px;
+  line-height: 32px;
+  color: #ccc;
+}
+
+a {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  background-color: #6A5C8E;
+}
+
+h2 a, h3 a {
+  border-left: 1px solid #333;
+  float: right;
+  width: 64px;
+  text-transform: none;
+  font-size: 0.67em;
+  font-weight: normal;
+}
+
+h2 a {
+  height: 48px;
+  line-height: 48px;
+  margin-top: -16px;
+}
+
+h3 a {
+  border-top: 1px solid #333;
+  height: 47px;
+  line-height: 47px;
+}
+
+/* Filtres */
+
+.filter-box {
+  background-color: #eee;
+  overflow: auto;
+  width: 100%
+}
+
+.filter-box div {
+  float: left;
+}
+
+label {
+  display: inline-block;
+  color: #222;
+  margin: 0;
+  padding: 0 5px;
+  width: 60px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+input, select {
+  margin: 0;
+  padding: 10px 6px;
+  border: 1px solid #eee;
+  background-color: #222;
+  color: #fff
+}
+
+input {
+  width: 150px;
+  padding: 11px 6px;
+}
+
+/* Intro */
+
+.intro input {
+  margin-top: 20px;
+}
+
+.intro label {
+  display: inline;
+  color: #ccc;
+}
+
+.intro p {
+  padding-top: 40px;
+  padding-left: 5px;
+  font-size: 2em;
+}
+
+/* Liste */
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 1px solid #333;
+  color: #fff;
+}
+
+li:first-child {
+  border-top: 1px solid #333;
+}
+
+li span:first-child {
+  padding-left: 10px;
+}
+
+li span.year {
+  float: right;
+  height: 100%;
+  padding-right: 10px;
+  color: #ccc;
+}
+
+li span.info {
+  color: #ccc;
+}
+
+li span.info + span {
+  float: right;
+  height: 100%;
+  padding-right: 10px;
+}
+
+li a {
+  border-left: 1px solid #333;
+  float: right;
+  height: 100%;
+  width: 64px;
+}
+
+/* Star */
+
+li span.info + span.star {
+  width: 32px;
+  height: 32px;
+  margin: 8px 10px;
+  padding: 0;
+  background: url('../img/stars.png') 0 0 no-repeat;
+  cursor: pointer;
+}
+
+li span.info + span.star.filled {
+  background-position:0 -32px;
+}
+
+/* Poster */
+
+img {
+  width: 250px;
+  display: block;
+  margin: 20px auto 10px;
+}
+
+/* Actors */
+
+span.role {
+  float: right;
+  height: 100%;
+  color: #ccc;
+  text-align: right;
+  margin-right: 10px;
+}
+
+span.samuel {
+  padding-right: 74px;
+  display: inline-block;
+  height: 100%;
+  background: url('../img/samuel.jpg') right top no-repeat;
+}
+
+@media all and (max-width: 479px) {
+
+  span.role {
+    font-size: 0.75em;
+  }
+
+  span.samuel {
+    width: 56px;
+    overflow: hidden;
+  }
+
+}
