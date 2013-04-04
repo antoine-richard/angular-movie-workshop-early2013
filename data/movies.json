@@ -1,0 +1,127 @@
+[
+  {
+    "id": 0,
+    "title": "Reservoir Dogs",
+    "year": 1992,
+    "duration": 99,
+    "budget": 1.2,
+    "poster": "http://upload.wikimedia.org/wikipedia/en/f/f6/Reservoir_dogs_ver1.jpg",
+    "actors": [
+      {
+        "id": 1,
+        "name": "Harvey Keitel",
+        "role": "Mr White"
+      },
+      {
+        "id": 2,
+        "name": "Tim Roth",
+        "role": "Mr Orange"
+      },
+      {
+        "id": 3,
+        "name": "Michael Madsen",
+        "role": "Mr Blonde"
+      },
+      {
+        "id": 4,
+        "name": "Steve Buscemi",
+        "role": "Mr Pink"
+      },
+      {
+        "id": 5,
+        "name": "Quentin Tarantino",
+        "role": "Mr Brown"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "duration": 154,
+    "budget": 8.5,
+    "poster": "http://upload.wikimedia.org/wikipedia/en/8/82/Pulp_Fiction_cover.jpg",
+    "actors": [
+      {
+        "id": 6,
+        "name": "John Travolta",
+        "role": "Vincent Vega"
+      },
+      {
+        "id": 7,
+        "name": "Samuel L. Jackson",
+        "role": "Jules Winnfield"
+      },
+      {
+        "id": 8,
+        "name": "Bruce Willis",
+        "role": "Butch Coolidge"
+      },
+      {
+        "id": 9,
+        "name": "Uma Thurman",
+        "role": "Mia Wallace"
+      },
+      {
+        "id": 10,
+        "name": "Ving Rhames",
+        "role": "Marsellus Wallace"
+      },
+      {
+        "id": 2,
+        "name": "Tim Roth",
+        "role": "Pumpkin / Ringo"
+      },
+      {
+        "id": 1,
+        "name": "Harvey Keitel",
+        "role": "Winston Wolfe"
+      },
+      {
+        "id": 5,
+        "name": "Quentin Tarantino",
+        "role": "Jimmie Dimmick"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Jackie Brown",
+    "year": 1997,
+    "duration": 154,
+    "budget": 12,
+    "poster": "http://upload.wikimedia.org/wikipedia/en/8/80/Jackie_Brown70%27s.jpg",
+    "actors": [
+      {
+        "id": 11,
+        "name": "Pam Grier",
+        "role": "Jackie Brown"
+      },
+      {
+        "id": 7,
+        "name": "Samuel L. Jackson",
+        "role": "Ordell Robbie"
+      },
+      {
+        "id": 12,
+        "name": "Robert Forster",
+        "role": "Max Cherry"
+      },
+      {
+        "id": 13,
+        "name": "Bridget Fonda",
+        "role": "Melanie Ralston"
+      },
+      {
+        "id": 14,
+        "name": "Michael Keaton",
+        "role": "Ray Nicolette"
+      },
+      {
+        "id": 0,
+        "name": "Robert De Niro",
+        "role": "Louis Gara"
+      }
+    ]
+  }
+]
