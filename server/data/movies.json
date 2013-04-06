@@ -5,7 +5,7 @@
     "year": 1992,
     "duration": 99,
     "budget": 1.2,
-    "poster": "http://upload.wikimedia.org/wikipedia/en/f/f6/Reservoir_dogs_ver1.jpg",
+    "poster": "/server/data/posters/reservoir_dogs.jpg",
     "actors": [
       {
         "id": 1,
@@ -40,7 +40,7 @@
     "year": 1994,
     "duration": 154,
     "budget": 8.5,
-    "poster": "http://upload.wikimedia.org/wikipedia/en/8/82/Pulp_Fiction_cover.jpg",
+    "poster": "/server/data/posters/pulp_fiction.jpg",
     "actors": [
       {
         "id": 6,
@@ -90,7 +90,7 @@
     "year": 1997,
     "duration": 154,
     "budget": 12,
-    "poster": "http://upload.wikimedia.org/wikipedia/en/8/80/Jackie_Brown70%27s.jpg",
+    "poster": "/server/data/posters/jackie_brown.jpg",
     "actors": [
       {
         "id": 11,
@@ -121,6 +121,126 @@
         "id": 0,
         "name": "Robert De Niro",
         "role": "Louis Gara"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Kill Bill",
+    "year": 2003,
+    "duration": 247,
+    "budget": 55,
+    "poster": "/server/data/posters/kill_bill.jpg",
+    "actors": [
+      {
+        "id": 9,
+        "name": "Uma Thurman",
+        "role": "The Bride"
+      },
+      {
+        "id": 15,
+        "name": "David Carradine",
+        "role": "Bill"
+      },
+      {
+        "id": 3,
+        "name": "Michael Madsen",
+        "role": "Budd"
+      },
+      {
+        "id": 16,
+        "name": "Lucy Liu",
+        "role": "O-Ren Ishii"
+      },
+      {
+        "id": 17,
+        "name": "Vivica a. Fox",
+        "role": "Vernita Green"
+      },
+      {
+        "id": 18,
+        "name": "Daryl Hannah",
+        "role": "Elle Driver"
+      },
+      {
+        "id": 7,
+        "name": "Samuel L. Jackson",
+        "role": "Rufus"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Inglourious Basterds",
+    "year": 2009,
+    "duration": 153,
+    "budget": 70,
+    "poster": "/server/data/posters/inglourious_basterds.jpg",
+    "actors": [
+      {
+        "id": 19,
+        "name": "Brad Pitt",
+        "role": "Lt. Aldo Raine"
+      },
+      {
+        "id": 20,
+        "name": "Mélanie Laurent",
+        "role": "Shosanna"
+      },
+      {
+        "id": 21,
+        "name": "Christoph Waltz",
+        "role": "Col. Hans Landa"
+      },
+      {
+        "id": 22,
+        "name": "Eli Roth",
+        "role": "Sgt. Donny Donowitz"
+      },
+      {
+        "id": 23,
+        "name": "Michael Fassbender",
+        "role": "Lt. Archie Hicox"
+      },
+      {
+        "id": 24,
+        "name": "Diane Kruger",
+        "role": "Bridget von Hammersmark"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Django Unchained",
+    "year": 2012,
+    "duration": 165,
+    "budget": 100,
+    "poster": "/server/data/posters/django_unchained.jpg",
+    "actors": [
+      {
+        "id": 25,
+        "name": "Jamie Foxx",
+        "role": "Django"
+      },
+      {
+        "id": 21,
+        "name": "Christoph Waltz",
+        "role": "Dr. King Schultz"
+      },
+      {
+        "id": 26,
+        "name": "Leonardo DiCaprio",
+        "role": "Calvin Candie"
+      },
+      {
+        "id": 27,
+        "name": "Kerry Washington",
+        "role": "Broomhilda von Schaft"
+      },
+      {
+        "id": 7,
+        "name": "Samuel L. Jackson",
+        "role": "Stephen"
       }
     ]
   }

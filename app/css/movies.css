@@ -75,6 +75,12 @@ h3 {
   color: #ccc;
 }
 
+@media all and (max-width: 479px) {
+  h2, h3 {
+    font-size: 1.1em;
+  }
+}
+
 a {
   color: #fff;
   text-align: center;
@@ -189,6 +195,12 @@ li span.year {
   color: #ccc;
 }
 
+@media all and (max-width: 479px) {
+  li span.year {
+    font-size: 0.75em;
+  }
+}
+
 li span.info {
   color: #ccc;
 }
@@ -204,6 +216,13 @@ li a {
   float: right;
   height: 100%;
   width: 64px;
+}
+
+@media all and (max-width: 479px) {
+  li a {
+    font-size: 0.75em;
+    width: 48px;
+  }
 }
 
 /* Star */
