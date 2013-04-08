@@ -12,10 +12,10 @@ app.controller('MoviesCtrl', ['$http', '$scope', function($http, $scope) {
 /**
  * Movie info sheet.
  */
-app.controller('MovieDetailCtrl', ['$http', '$scope', '$routeParams', 'starService', function($http, $scope, $routeParams, starService) {
+app.controller('MovieDetailCtrl', ['$http', '$scope', '$routeParams', function($http, $scope, $routeParams) {
 	$http.get('/data/movies.json/'+$routeParams.movieId+'/$') // Lightweight movie object
-	.success(function(lightMovie) {
-		$scope.movie = lightMovie;
+	.success(function(lightweightMovie) {
+		$scope.movie = lightweightMovie;
 	});
 }]);
 
