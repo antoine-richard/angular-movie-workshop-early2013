@@ -1,0 +1,25 @@
+<h2>
+	{{movie.title}}
+	<a href="#/movies">Home</a>
+</h2>
+<h3>
+	Info sheet
+	<a href="#/movies/{{movie.id}}/actors">Actors</a>
+</h3>
+
+<ul>
+	<li>
+		<span class="info">Year</span>
+		<span>{{movie.year}}</span>
+	</li>
+	<li>
+		<span class="info">Duration</span>
+		<span>{{movie.duration}} minutes</span>
+	</li>
+	<li>
+		<span class="info">Budget</span>
+		<span>${{movie.budget}} million</span>
+	</li>
+</ul>
+
+<img ng-src="{{movie.poster}}">

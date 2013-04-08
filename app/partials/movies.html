@@ -18,8 +18,8 @@
 <ul>
 	<li ng-repeat="movie in movies | filter:query | orderBy:order">
 		<span>{{movie.title}}</span>
-		<a href="#">Actors</a>
-		<a href="#">Sheet</a>
+		<a href="#/movies/{{movie.id}}/actors">Actors</a>
+		<a href="#/movies/{{movie.id}}">Sheet</a>
 		<span class="year">{{movie.year}}</span>
 	</li>
 </ul>

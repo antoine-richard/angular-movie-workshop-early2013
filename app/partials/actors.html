@@ -1,0 +1,16 @@
+
+<h2 class="light">
+	{{movie.title}}
+	<a href="#/movies">Home</a>
+</h2>
+<h3>
+	Actors
+	<a href="#/movies/{{movie.id}}">Movie</a>
+</h3>
+
+<ul>
+	<li ng-repeat="actor in movie.actors">
+		<span>{{actor.name}}</span>
+		<span class="role">{{actor.role}}</span>
+	</li>
+</ul>
