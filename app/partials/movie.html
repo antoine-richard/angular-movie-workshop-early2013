@@ -20,6 +20,10 @@
 		<span class="info">Budget</span>
 		<span>${{movie.budget}} million</span>
 	</li>
+	<li>
+		<span class="info">Favorite</span>
+		<span class="star {{favorite}}" ng-click="toggleStar(movie.id)"></span>
+	</li>
 </ul>
 
 <img ng-src="{{movie.poster}}">
