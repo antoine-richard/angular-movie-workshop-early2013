@@ -1,8 +1,22 @@
 
 <h1>Movies</h1>
 
+<div class="filter-box">
+	<div>
+		<label>Filter</label>
+		<input type="text" ng-model="query.title">
+	</div>
+	<div>
+		<label>Sort by</label>
+		<select ng-model="order" ng-init="order='year'">
+			<option value="year">Year</option>
+			<option value="title">Title</option>
+		</select>
+	</div>
+</div>
+
 <ul>
-	<li ng-repeat="movie in movies">
+	<li ng-repeat="movie in movies | filter:query | orderBy:order">
 		<span>{{movie.title}}</span>
 		<a href="#">Actors</a>
 		<a href="#">Sheet</a>
