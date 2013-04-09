@@ -16,7 +16,7 @@
 </div>
 
 <ul>
-	<li ng-repeat="movie in movies | filter:query | orderBy:order">
+	<li ng-repeat="movie in movies | filter:query | orderBy:order" ng-animate="'custom'">
 		<span>{{movie.title}}</span>
 		<a href="#/movies/{{movie.id}}/actors">Actors</a>
 		<a href="#/movies/{{movie.id}}">Sheet</a>
