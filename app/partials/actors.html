@@ -1,3 +1,8 @@
+<!--[if lte IE 8]>
+    <script>
+        document.createElement('mv-actor');
+    </script>
+<![endif]-->
 
 <h2 class="light">
 	{{movie.title}}
@@ -10,7 +15,7 @@
 
 <ul>
 	<li ng-repeat="actor in movie.actors">
-		<span>{{actor.name}}</span>
+		<mv-actor name="actor.name"></mv-actor>
 		<span class="role">{{actor.role}}</span>
 	</li>
 </ul>
