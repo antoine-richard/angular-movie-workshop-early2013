@@ -8,15 +8,17 @@
 </head>
 <body>
 	
-	<div id="container" class="intro">
+	<div id="container" class="intro" ng-app>
 
 		<label>What's your name ?</label>
-		<input type="text"/>
-		<p>Hello !</p>
+		<input type="text" ng-model="name"/>
+		<p>Hello {{name}}!</p>
 
 	</div>
 
 	<p id="footer"><a href="https://github.com/antoine-richard/angular-movie-workshop">AngularJS Movie Workshop</a></p>
   	
+  	<script src="lib/angular.js"></script>
+
 </body>
 </html>
