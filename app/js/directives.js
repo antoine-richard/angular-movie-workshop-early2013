@@ -1,6 +1,6 @@
 /**
  * Actor tag.
- * Displays the actor's name in a span.
+ * Displays a photo next to the actor's name.
  * Unless it's Samuel Jackson who deserves a fucking better treatment!
  */
 angular.module('moviesApp.directives', [])
@@ -9,14 +9,19 @@ angular.module('moviesApp.directives', [])
     	restrict: 'E',
     	replace: true,
     	scope: {
-    		name: '='
+    		actor: '='
     	},
-    	template: '<span>{{name}}</span>',
+    	template: '<span>{{actor.name}}</span>',
+
     	link: function(scope, element, attributes) {
-    		if (scope.name === 'Samuel L. Jackson') {
-    			scope.name += ' !';
-    			element.addClass('samuel');
-    		}
+
+    		element.addClass('photo');
+            element.css('background-position', '0 -'+((scope.actor.id - 1) * 48)+'px');
+
+            if (scope.actor.name === 'Samuel L. Jackson') {
+                scope.actor.name += ' !';
+            }
+            
     	}
     };
 });
