@@ -16,12 +16,12 @@ angular.module('moviesApp.directives', [])
     	link: function(scope, element, attributes) {
 
     		element.addClass('photo');
-            element.css('background-position', '0 -'+((scope.actor.id - 1) * 48)+'px');
+            element.css('background-position', '0 -'+(scope.actor.id * 48)+'px');
 
             if (scope.actor.name === 'Samuel L. Jackson') {
                 scope.actor.name += ' !';
             }
-            
+        
     	}
     };
 });
