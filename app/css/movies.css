@@ -131,7 +131,7 @@ h3 a {
 }
 
 .filter-box div {
-  float: left;
+  display: inline-block;
 }
 
 label {
@@ -270,20 +270,20 @@ span.role {
 
 span.photo {
   padding-left: 74px !important;
-  display: inline-block;
+  float: left;
   height: 100%;
   background: url('../img/photos.png') 0 0 no-repeat;
 }
 
 @media all and (max-width: 479px) {
 
-  span.role {
+  span.role, span.photo {
     font-size: 0.75em;
   }
 
-  span.photo {
+  /*span.photo {
     width: 56px;
     overflow: hidden;
-  }
+  }*/
 
 }
