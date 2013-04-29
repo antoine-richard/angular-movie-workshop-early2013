@@ -1,0 +1,24 @@
+{
+  "author": "Antoine Richard",
+  "name": "angular-movie-workshop",
+  "homepage": "http://sul/bootdev",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antoine-richard/angular-movie-workshop.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-copy": "~ 0.4.1",
+    "grunt-contrib-concat": "~0.2.0",
+    "grunt-contrib-uglify":  "~0.2.0",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-usemin": "~0.1.11",
+    "grunt-contrib-csslint": "~0.1.2",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-karma": "~0.4.4",
+    "grunt-contrib-watch": "~0.3.1"
+  }
+}

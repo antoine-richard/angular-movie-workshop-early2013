@@ -1,3 +1,4 @@
+
 /**
  * Actor tag.
  * Displays a photo next to the actor's name.
@@ -18,9 +19,9 @@ angular.module('moviesApp.directives', [])
     		element.addClass('photo');
             element.css('background-position', '0 -'+(scope.actor.id * 48)+'px');
 
-            if (scope.actor.name === 'Samuel L. Jackson') {
+            if (scope.actor.name === 'Samuel L. Jackson') 
                 scope.actor.name += ' !';
-            }
+
         
     	}
     };
