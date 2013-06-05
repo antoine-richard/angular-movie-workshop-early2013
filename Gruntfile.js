@@ -5,10 +5,10 @@ module.exports = function (grunt) {
     // variables
 
     src: {
-      root: 'app'
+      root: 'app',
       css:  ['app/css/*.css'],
       js:   ['app/js/**/*.js'],
-      test: ['test/**/*.js'],
+//    test: ['test/**/*.js'],
       img:  'app/img'
     },
     
@@ -50,47 +50,43 @@ module.exports = function (grunt) {
     },
 
     jshint: {
-      files: ['<%= src.js %>', '<%= src.test %>'],
       options: {
-        curly:   true,
-        eqeqeq:  true,
-        immed:   true,
-        latedef: true,
-        newcap:  true,
-        noarg:   true,
-        sub:     true,
-        undef:   true,
-        unused:  true,
-        boss:    true,
-        eqnull:  true,
+        undef: true,
+        curly: true,
         browser: true,
         globals: {
-          'angular': false
-        }
-      }
+          angular: true
+        },
+      },
+      files: ['<%= src.js %>'/*, '<%= src.test %>'*/]
     },
 
     csslint: {
+      options: {
+        'adjoining-classes': false,
+        'unique-headings': false,
+        'ids': false,
+        'important': false,
+        'box-model': false,
+        'font-sizes': false
+      },
       app: {
-        src: ['<%= src.css %>'],
-        rules: {
-          'overqualified-elements': 3
-        }
+        src: ['<%= src.css %>']
       }
     },
 
-    karma: {
+/*  karma: {
       unit: {
         configFile : 'test/config/karma.conf.js'
       }
-    },
+    },*/
 
     // watch configuration
     
     watch: {
       /* continuous linting */
       lint: {
-        files: ['<%= src.js %>', '<%= src.test %>', '<%= src.css %>'],
+        files: ['<%= src.js %>',/* '<%= src.test %>',*/ '<%= src.css %>'],
         tasks: ['lint']
       }
     }
@@ -105,12 +101,13 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-usemin');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-karma');
+//  grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('lint',    ['jshint', 'csslint']);
   //grunt.registerTask('test',    ['lint', 'karma:dev']);
-  grunt.registerTask('release', ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin']);
+  grunt.registerTask('dist',    ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin']);
+  grunt.registerTask('release', ['lint', 'dist']);
   //grunt.registerTask('default', ['test']);
 
 };

@@ -246,7 +246,7 @@ li span.info + span.star {
   cursor: pointer;
 }
 
-li span.info + span.star.filled {
+li span.info + .star.filled {
   background-position:0 -32px;
 }
 

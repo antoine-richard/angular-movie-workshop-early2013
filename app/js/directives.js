@@ -7,22 +7,22 @@
 angular.module('moviesApp.directives', [])
 .directive('mvActor', function() {
     return {
-    	restrict: 'E',
-    	replace: true,
-    	scope: {
-    		actor: '='
-    	},
-    	template: '<span>{{actor.name}}</span>',
+        restrict: 'E',
+        replace: true,
+        scope: {
+            actor: '='
+        },
+        template: '<span>{{actor.name}}</span>',
 
-    	link: function(scope, element, attributes) {
+        link: function(scope, element, attributes) {
 
-    		element.addClass('photo');
+            element.addClass('photo');
             element.css('background-position', '0 -'+(scope.actor.id * 48)+'px');
 
-            if (scope.actor.name === 'Samuel L. Jackson') 
+            if (scope.actor.name === 'Samuel L. Jackson') {
                 scope.actor.name += ' !';
-
+            }
         
-    	}
+        }
     };
 });
