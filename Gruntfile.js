@@ -5,11 +5,11 @@ module.exports = function (grunt) {
     // variables
 
     src: {
-      root: 'app',
-      css:  ['app/css/*.css'],
-      js:   ['app/js/**/*.js'],
+      root: 'src',
+      css:  ['src/css/*.css'],
+      js:   ['src/js/**/*.js'],
 //    test: ['test/**/*.js'],
-      img:  'app/img'
+      img:  'src/img'
     },
     
     dest: {
@@ -70,9 +70,7 @@ module.exports = function (grunt) {
         'box-model': false,
         'font-sizes': false
       },
-      app: {
-        src: ['<%= src.css %>']
-      }
+      src: ['<%= src.css %>']
     },
 
 /*  karma: {
