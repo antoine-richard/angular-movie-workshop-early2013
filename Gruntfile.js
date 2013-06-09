@@ -8,7 +8,7 @@ module.exports = function (grunt) {
       root: 'src',
       css:  ['src/css/*.css'],
       js:   ['src/js/**/*.js'],
-//    test: ['test/**/*.js'],
+      test: ['test/unit/**/*.js'],
       img:  'src/img'
     },
     
@@ -58,7 +58,7 @@ module.exports = function (grunt) {
           angular: true
         },
       },
-      files: ['<%= src.js %>'/*, '<%= src.test %>'*/]
+      files: ['<%= src.js %>', '<%= src.test %>']
     },
 
     csslint: {
@@ -73,18 +73,18 @@ module.exports = function (grunt) {
       src: ['<%= src.css %>']
     },
 
-/*  karma: {
+    karma: {
       unit: {
-        configFile : 'test/config/karma.conf.js'
+        configFile : 'test/config/karma-unit.conf.js'
       }
-    },*/
+    },
 
     // watch configuration
     
     watch: {
       /* continuous linting */
       lint: {
-        files: ['<%= src.js %>',/* '<%= src.test %>',*/ '<%= src.css %>'],
+        files: ['<%= src.js %>', '<%= src.test %>', '<%= src.css %>'],
         tasks: ['lint']
       }
     }
@@ -99,13 +99,13 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-usemin');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-//  grunt.loadNpmTasks('grunt-karma');
+  grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('lint',    ['jshint', 'csslint']);
-  //grunt.registerTask('test',    ['lint', 'karma:dev']);
+  grunt.registerTask('test',    ['lint', 'karma:unit']);
   grunt.registerTask('dist',    ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin']);
-  grunt.registerTask('release', ['lint', 'dist']);
+  grunt.registerTask('release', ['test', 'dist']);
   //grunt.registerTask('default', ['test']);
 
 };
