@@ -106,6 +106,6 @@ module.exports = function (grunt) {
   grunt.registerTask('test',    ['lint', 'karma:unit']);
   grunt.registerTask('dist',    ['clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin']);
   grunt.registerTask('release', ['test', 'dist']);
-  //grunt.registerTask('default', ['test']);
+  grunt.registerTask('default', ['dist']);
 
 };

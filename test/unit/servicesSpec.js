@@ -1,3 +1,5 @@
+/* global describe:false, beforeEach:false, it:false, expect:false, module:false, inject:false */
+
 describe('starService', function () {
 
     beforeEach(module('moviesApp'));
